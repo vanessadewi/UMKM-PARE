@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UMKM Pare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">UMKM Pare</h1>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#contact-info">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Produk Lokal Berkualitas</h2>
+    <p>Temukan dan dukung UMKM terbaik dari Kecamatan Pare</p>
+    <a href="#galeri" class="cta-button">Lihat Produk</a>
+  </section>
+
+  <section id="about">
+    <h2>Tentang UMKM Pare</h2>
+    <p>
+      UMKM Pare adalah pusat pengembangan dan promosi usaha mikro, kecil, dan menengah di Kecamatan Pare. Kami menyediakan platform jualan online bagi warga untuk memperluas pasar dan memudahkan pembeli terhubung langsung dengan penjual.
+    </p>
+  </section>
+
+  <section id="galeri" class="container">
+    <h2 class="section-header">Produk UMKM</h2>
+    <div class="produk-list">
+      <div class="produk-card">
+        <img src="abonlele.jpg" />
+        <div class="produk-nama">Abon Lele ELORA</div>
+        <div class="produk-toko">Abon lele ELORA terbuat dari daging lele dengan tambahan bumbu dan rempah rempah berkualitas</div>
+        <button class="wa-button" onclick="chatWA('628123228064','Halo, saya ingin membeli Abon Lele')">Chat WA</button>
+      </div>
+
+      <div class="produk-card">
+        <img src="batik.jpeg" />
+        <div class="produk-nama">Batik Srigaya</div>
+        <div class="produk-toko">Batik adalah salah satu peninggalan nenek moyang kita, namun di Batik Srigaya “Batik” bukan hanya sebagai peninggalan saja, namun dari batik kita membuat berbagai macam kreasi fashion dengan menggunakan motif yang unik menambah kesan eksklusif dari Batik Srigaya</div>
+        <button class="wa-button" onclick="chatWA('6281225833053','Halo, saya ingin membeli Batik Srigaya')">Chat WA</button>
+      </div>
+
+      <div class="produk-card">
+        <img src="jamu.webp" />
+        <div class="produk-nama">Jamu Instant Shantyka</div>
+        <div class="produk-toko">Jamu Instan Jahe shantyka, produk minuman sehat untuk semua usia. produk shantika selain jamu ada unthuk yuyu, sambel pecel, minuman herbal, jamu beras kencur, lemon sere, kunyit asem dan minuman rempah rosela.</div>
+        <button class="wa-button" onclick="chatWA('6282244611900','Halo, saya ingin membeli Jamu')">Chat WA</button>
+      </div>
+
+<div class="produk-card">
+        <img src="jamur.jpg" />
+        <div class="produk-nama">ARIESTA SNACK</div>
+        <div class="produk-toko">Keripik jamur khas kediri yang memunyai citarasa yang gurih dan krispi, selain lezat keripik jamur kita juga mempunyai fungsi yang dapat menambah kekebalan tubuh.</div>
+        <button class="wa-button" onclick="chatWA('6282229701046','Halo, saya ingin membeli Jamur')">Chat WA</button>
+      </div>
+
+    </div>
+  </section>
+  
+
+  <section id="contact-info">
+    <h3>Kontak Kecamatan Pare</h3>
+    <p>Jika Anda membutuhkan informasi lebih lanjut atau ingin menghubungi pihak Kecamatan Pare, silahkan gunakan data kontak berikut:</p>
+    <div class="contact-table-wrapper">
+  <table class="contact-table" role="presentation">
+    <tbody>
+      <tr>
+      <tr>
+        <th>Alamat:</th>
+        <td>52RR+MGQ, Jl. Raya Kediri - Plosoklaten, Katang, Sukorejo, Kec. Ngasem, Kabupaten Kediri, Jawa Timur 64182</td>
+      </tr>
+      <tr>
+        <th>Telepon:</th>
+        <td>(0354) 680968</td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td>diskoperasi@kedirikab.go.id</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <nav class="footer-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#contact-info">Contact</a>
+      </nav>
+      <p>&copy; 2025 UMKM Pare | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function chatWA(phone, message) {
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
